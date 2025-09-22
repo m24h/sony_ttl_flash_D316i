@@ -229,7 +229,7 @@ void main(void)
             	LED = 1;
             } 
             // just play with illuminator
-            ILLU = !(flash_data.write.func5 & FLASH_SONY_WRITE_FUNC5_NO_AF);
+            ILLU = !(flash_data.write.func5 & FLASH_SONY_WRITE_FUNC5_NO_AF) && flash_data.state!=FLASH_SONY_COMM_OFFLINE;
         } else if (taskno == 4) {
             // incoming message (1 byte only) from default serial port
             switch ((unsigned char)tolower(getchar())) {
@@ -286,13 +286,13 @@ void main(void)
                 		  printf("\nPower pre=%d formal=%d\n", flash_power_pre, flash_power_formal);
                           printf("Actual pre=%d formal=%d\n", flash_power_pre_act, flash_power_formal_act);
                           break;
-                case 't': static int8_t power=-12;
+                case 'm': static int8_t power=-12;
                           power++;
+                          if (power>FLASH_LEVEL_FULL) power=-12;
                           flash_data.read.mode &= ~FLASH_SONY_READ_MODE_CONTROLLED; // manual mode
                           flash_data.read.power = ((FLASH_POWER_LEVEL_MAX-power)<<2)+15;
                           printf("Manual mode, power=%d\n", power);
 						  break;
-                case 'm': 
                 case '?': printf("bdrapcxfi\n");
                           break;
             } 

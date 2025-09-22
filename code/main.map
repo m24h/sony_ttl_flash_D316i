@@ -80,9 +80,9 @@ C:   00000105  s_GSINIT5
 C:   000001B1  s_GSFINAL                       
 C:   000001B4  s_CSEG                          
 C:   00000228  l_CONST                         
-C:   00001165  l_CSEG                          
-C:   00001319  s_CONST                         
-C:   00001541  s_XINIT                         
+C:   00001178  l_CSEG                          
+C:   0000132C  s_CONST                         
+C:   00001554  s_XINIT                         
 
 ASxxxx Linker V03.00/V05.40 + sdld,  page 3.
 Hexadecimal  [32-Bits]
@@ -1388,50 +1388,50 @@ Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-CSEG                                000001B4    00001165 =        4453. bytes (REL,CON,CODE)
+CSEG                                000001B4    00001178 =        4472. bytes (REL,CON,CODE)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
 C:   00000320  _tmr2_isr                          main
 C:   00000331  _main_tick_get                     main
 C:   0000034E  _main                              main
-C:   000009EC  _flash_prepare                     main
-C:   000009EF  _flash_f3clk_isr                   flash
-C:   00000C10  _flash_f1sync_isr                  flash
-C:   00000D59  _flash_timer_isr                   flash
-C:   00000D90  _flash_setup                       flash
-C:   00000DFE  _sys_boot                          sys_boot
-C:   00000E03  _printf_tiny                       printf_tiny
-C:   00000F0C  _putchar                           ser1_putchar
-C:   00000F0C  _ser1_putchar                      ser1_putchar
-C:   00000F15  _sys_boot_ISP                      sys_boot_ISP
-C:   00000F1A  _adc_get                           adc_get
-C:   00000F34  __divulong                         _divulong
-C:   00000F3A  __divlong                          _divulong
-C:   00000FA1  _sys_delay_ms                      sys_delay_ms
-C:   00000FBA  _tolower                           tolower
-C:   00000FE0  _pio_disable_all                   pio_disable_all
-C:   000010D9  _sys_delay_us                      sys_delay_us
-C:   000010F6  __gptrget                          _gptrget
-C:   00001112  _pio_config                        pio_config
-C:   00001229  __mullong                          _mullong
-C:   00001229  __mullong_dummy                    _mullong
-C:   00001299  _getchar                           ser1_getchar
-C:   00001299  _ser1_getchar                      ser1_getchar
-C:   000012A7  __divsint                          _divsint
-C:   000012E4  __divuint                          _divuint
-C:   000012EE  __divint                           _divuint
-C:   00001315  ___sdcc_external_startup           _startup
+C:   000009FF  _flash_prepare                     main
+C:   00000A02  _flash_f3clk_isr                   flash
+C:   00000C23  _flash_f1sync_isr                  flash
+C:   00000D6C  _flash_timer_isr                   flash
+C:   00000DA3  _flash_setup                       flash
+C:   00000E11  _sys_boot                          sys_boot
+C:   00000E16  _printf_tiny                       printf_tiny
+C:   00000F1F  _putchar                           ser1_putchar
+C:   00000F1F  _ser1_putchar                      ser1_putchar
+C:   00000F28  _sys_boot_ISP                      sys_boot_ISP
+C:   00000F2D  _adc_get                           adc_get
+C:   00000F47  __divulong                         _divulong
+C:   00000F4D  __divlong                          _divulong
+C:   00000FB4  _sys_delay_ms                      sys_delay_ms
+C:   00000FCD  _tolower                           tolower
+C:   00000FF3  _pio_disable_all                   pio_disable_all
+C:   000010EC  _sys_delay_us                      sys_delay_us
+C:   00001109  __gptrget                          _gptrget
+C:   00001125  _pio_config                        pio_config
+C:   0000123C  __mullong                          _mullong
+C:   0000123C  __mullong_dummy                    _mullong
+C:   000012AC  _getchar                           ser1_getchar
+C:   000012AC  _ser1_getchar                      ser1_getchar
+C:   000012BA  __divsint                          _divsint
+C:   000012F7  __divuint                          _divuint
+C:   00001301  __divint                           _divuint
+C:   00001328  ___sdcc_external_startup           _startup
 ASxxxx Linker V03.00/V05.40 + sdld,  page 37.
 Hexadecimal  [32-Bits]
 
 Area                                    Addr        Size        Decimal Bytes (Attributes)
 --------------------------------        ----        ----        ------- ----- ------------
-CONST                               00001319    00000228 =         552. bytes (REL,CON,CODE)
+CONST                               0000132C    00000228 =         552. bytes (REL,CON,CODE)
 
       Value  Global                              Global Defined In Module
       -----  --------------------------------   ------------------------
-C:   00001319  _flash_time_of_level               main
+C:   0000132C  _flash_time_of_level               main
 
 ASxxxx Linker V03.00/V05.40 + sdld,  page 38.
 
